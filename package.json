@@ -1,4 +1,18 @@
 {
   "name": "app",
-  "private": "true"
+  "private": "true",
+  "dependencies": {
+    "@hotwired/stimulus": "^3.0.1",
+    "@hotwired/turbo-rails": "^7.1.1",
+    "@patternfly/patternfly": "^4.164.2",
+    "@patternfly/react-core": "^4.181.1",
+    "@patternfly/react-icons": "^4.32.1",
+    "esbuild": "^0.14.14",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "scripts": {
+    "build": "esbuild --bundle app/javascript/application.js --outfile=app/assets/javascripts/application.js --loader:.html=text --loader:.js=jsx --loader:.svg=dataurl --loader:.png=dataurl --loader:.jpg=dataurl --loader:.woff=dataurl --loader:.woff2=dataurl",
+    "watch": "esbuild --watch --bundle app/javascript/application.js --outfile=app/assets/javascripts/application.js --loader:.html=text --loader:.js=jsx --loader:.svg=dataurl --loader:.png=dataurl --loader:.jpg=dataurl --loader:.woff=dataurl --loader:.woff2=dataurl"
+  }
 }
