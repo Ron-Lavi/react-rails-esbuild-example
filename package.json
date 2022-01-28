@@ -12,7 +12,7 @@
     "react-dom": "^17.0.2"
   },
   "scripts": {
-    "build": "esbuild --bundle app/javascript/application.js --outfile=app/assets/javascripts/application.js --loader:.html=text --loader:.js=jsx --loader:.svg=dataurl --loader:.png=dataurl --loader:.jpg=dataurl --loader:.woff=dataurl --loader:.woff2=dataurl",
-    "watch": "esbuild --watch --bundle app/javascript/application.js --outfile=app/assets/javascripts/application.js --loader:.html=text --loader:.js=jsx --loader:.svg=dataurl --loader:.png=dataurl --loader:.jpg=dataurl --loader:.woff=dataurl --loader:.woff2=dataurl"
+    "build": "esbuild --bundle app/javascript/application.js --outdir=app/assets/javascripts --loader:.html=text --loader:.js=jsx --loader:.svg=dataurl --loader:.png=dataurl --loader:.jpg=dataurl --loader:.woff=dataurl --loader:.woff2=dataurl --splitting --format=esm",
+    "watch": "esbuild --watch --bundle app/javascript/application.js --outdir=app/assets/javascripts --loader:.html=text --loader:.js=jsx --loader:.svg=dataurl --loader:.png=dataurl --loader:.jpg=dataurl --loader:.woff=dataurl --loader:.woff2=dataurl --splitting  --format=esm"
   }
 }

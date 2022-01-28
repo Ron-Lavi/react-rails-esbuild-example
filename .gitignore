@@ -39,5 +39,4 @@
 
 /node_modules
 yarn.lock
-app/assets/javascripts/application.css
-app/assets/javascripts/application.js
+app/assets/javascripts/*
