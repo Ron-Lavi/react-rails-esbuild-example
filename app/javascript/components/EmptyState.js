@@ -13,7 +13,7 @@ export default () => (
   <EmptyState>
     <EmptyStateIcon icon={CubesIcon} />
     <Title headingLevel="h4" size="lg">
-      Empty state
+      Hello from main app!
     </Title>
     <EmptyStateBody>
       This represents an the empty state pattern in Patternfly 4. Hopefully it's simple enough to use but flexible
