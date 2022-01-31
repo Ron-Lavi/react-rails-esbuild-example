@@ -39,8 +39,6 @@ import TypeAheadSelect from './common/TypeAheadSelect';
 import DatePicker from './common/DateTimePicker/DatePicker';
 import RedirectCancelButton from './common/RedirectCancelButton';
 import SettingRecords from './SettingRecords';
-import SettingsTable from './SettingsTable';
-import SettingUpdateModal from './SettingUpdateModal';
 import PersonalAccessTokens from './users/PersonalAccessTokens';
 import ClipboardCopy from './common/ClipboardCopy';
 import LabelIcon from './common/LabelIcon';
@@ -144,7 +142,6 @@ const coreComponets = [
   { name: 'RedirectCancelButton', type: RedirectCancelButton },
   { name: 'SettingRecords', type: SettingRecords },
   { name: 'SettingsTable', type: SettingsTable },
-  { name: 'SettingUpdateModal', type: SettingUpdateModal },
   { name: 'PersonalAccessTokens', type: PersonalAccessTokens },
   { name: 'ClipboardCopy', type: ClipboardCopy },
   { name: 'LabelIcon', type: LabelIcon },

@@ -1,3 +1,5 @@
-@import '~@theforeman/vendor/scss/variables';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import '~patternfly/dist/sass/patternfly/variables';
+@import '~@patternfly/patternfly/base/patternfly-variables';
 
 $header-max-width: calc(#{$pf-global--breakpoint--lg} + 70px); //TODO move into @theforeman/vendor/scss/variables

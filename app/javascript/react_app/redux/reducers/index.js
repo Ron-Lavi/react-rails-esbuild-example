@@ -19,7 +19,6 @@ import { reducers as bookmarksReducers } from '../../components/Bookmarks';
 import { reducers as bookmarksPF4Reducers } from '../../components/PF4/Bookmarks';
 import { reducers as modalReducers } from '../../components/ForemanModal';
 import { reducers as apiReducer } from '../API';
-import { reducers as modelsPageReducers } from '../../routes/Models/ModelsPage';
 import { reducers as settingRecordsReducers } from '../../components/SettingRecords';
 import { reducers as personalAccessTokensReducers } from '../../components/users/PersonalAccessTokens';
 import { reducers as confirmModalReducers } from '../../components/ConfirmModal';

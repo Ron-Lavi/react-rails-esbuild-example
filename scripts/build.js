@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 process.env.NODE_ENV = "production";
+const esbuild = require("esbuild");
+const eslintSassPlugin = require("esbuild-sass-plugin");
 
-require("esbuild").buildSync({
+esbuild.build({
   entryPoints: ["app/javascript/application.js"],
   bundle: true,
   minify: true,
@@ -9,6 +11,9 @@ require("esbuild").buildSync({
   splitting: true,
   format: "esm",
   outdir: "app/assets/javascripts",
+  plugins: [
+    eslintSassPlugin.sassPlugin(),
+  ],
   loader: {
     ".html": "text",
     ".js": "jsx",

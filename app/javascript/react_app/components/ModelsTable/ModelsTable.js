@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Table } from '../common/table';
 import createModelsTableSchema from './ModelsTableSchema';
 
 const ModelsTable = ({
@@ -11,17 +10,7 @@ const ModelsTable = ({
   onDeleteClick,
   id,
 }) => (
-  <Table
-    key="models-table"
-    columns={createModelsTableSchema(
-      getTableItems,
-      sortBy,
-      sortOrder,
-      onDeleteClick
-    )}
-    rows={results}
-    id={id}
-  />
+  <div>table</div>
 );
 
 ModelsTable.propTypes = {

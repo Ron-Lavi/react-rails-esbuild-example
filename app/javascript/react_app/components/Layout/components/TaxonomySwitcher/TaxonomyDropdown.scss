@@ -1,4 +1,6 @@
-@import '~@theforeman/vendor/scss/variables';
+@import '~bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import '~patternfly/dist/sass/patternfly/variables';
+@import '~@patternfly/patternfly/base/patternfly-variables';
 
 .pf-c-page__header-tools-group {
   .pf-c-context-selector__menu-search {

@@ -1,14 +1,4 @@
 import { translate as __ } from '../../common/I18n';
-import {
-  column,
-  sortableColumn,
-  headerFormatterWithProps,
-  cellFormatterWithProps,
-  nameCellFormatter,
-  hostsCountCellFormatter,
-  deleteActionCellFormatter,
-  cellFormatter,
-} from '../common/table';
 
 const sortControllerFactory = (apiCall, sortBy, sortOrder) => ({
   apply: (by, order) => {
