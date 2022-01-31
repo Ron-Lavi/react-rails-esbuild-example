@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout selectors should filter out nameless items 1`] = `
+Array [
+  Object {
+    "className": undefined,
+    "iconClass": "pficon pficon-unplugged",
+    "subItems": Array [],
+    "title": "Empty",
+  },
+]
+`;
+
+exports[`Layout selectors should return Layout 1`] = `
+Object {
+  "activeMenu": "Hosts",
+  "currentLocation": "loc1",
+  "currentOrganization": "org1",
+  "isCollapsed": false,
+  "isLoading": true,
+  "items": Array [
+    Object {
+      "children": Array [
+        Object {
+          "exact": true,
+          "name": "Dashboard",
+          "type": "item",
+          "url": "/",
+        },
+        Object {
+          "name": "Facts",
+          "type": "item",
+          "url": "/fact_values",
+        },
+      ],
+      "icon": "fa fa-tachometer",
+      "name": "Monitor",
+      "type": "sub_menu",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "name": "All Hosts",
+          "type": "item",
+          "url": "/hosts/new",
+        },
+      ],
+      "icon": "fa fa-server",
+      "name": "Hosts",
+      "type": "sub_menu",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "type": "item",
+          "url": "/nameless",
+        },
+        Object {
+          "type": "divider",
+        },
+      ],
+      "icon": "pficon pficon-unplugged",
+      "name": "Empty",
+      "type": "sub_menu",
+    },
+  ],
+}
+`;
+
+exports[`Layout selectors should return PF-React Compatible items 1`] = `
+Array [
+  Object {
+    "className": undefined,
+    "iconClass": "fa fa-tachometer",
+    "subItems": Array [
+      Object {
+        "className": "",
+        "href": "/",
+        "id": "menu_item_dashboard",
+        "isDivider": false,
+        "onClick": [Function],
+        "preventHref": true,
+        "title": "Dashboard",
+      },
+      Object {
+        "className": "",
+        "href": "/fact_values",
+        "id": "menu_item_facts",
+        "isDivider": false,
+        "onClick": [Function],
+        "preventHref": true,
+        "title": "Facts",
+      },
+    ],
+    "title": "Monitor",
+  },
+  Object {
+    "className": undefined,
+    "iconClass": "fa fa-server",
+    "subItems": Array [
+      Object {
+        "className": "",
+        "href": "/hosts/new",
+        "id": "menu_item_all_hosts",
+        "isDivider": false,
+        "onClick": [Function],
+        "preventHref": true,
+        "title": "All Hosts",
+      },
+    ],
+    "title": "Hosts",
+  },
+  Object {
+    "className": undefined,
+    "iconClass": "pficon pficon-unplugged",
+    "subItems": Array [],
+    "title": "Empty",
+  },
+]
+`;
+
+exports[`Layout selectors should return activeMenu 1`] = `"Hosts"`;
+
+exports[`Layout selectors should return empty array of items 1`] = `Array []`;
+
+exports[`Layout selectors should return isCollapsed from selector 1`] = `false`;
+
+exports[`Layout selectors should return isLoading from selector 1`] = `true`;

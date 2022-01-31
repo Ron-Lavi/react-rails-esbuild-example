@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutoComplete rendering renders AutoComplete 1`] = `
+<div
+  className="pf-c-search-input"
+>
+  <div
+    className="search-bar pf-c-input-group"
+    id="search-bar"
+  >
+    <Connect(AutoComplete)
+      controller="models"
+      handleSearch={[Function]}
+      id="searchBar"
+      searchQuery=""
+      url="model/auto_complete_search"
+      useKeyShortcuts={true}
+    />
+    <Button
+      aria-label="search button for search input"
+      className="autocomplete-search-btn"
+      id="btn-search"
+      onClick={[Function]}
+      variant="control"
+    >
+      <SearchIcon
+        color="currentColor"
+        noVerticalAlign={false}
+        size="sm"
+      />
+    </Button>
+    <ConnectedBookmarks
+      canCreate={true}
+      controller="models"
+      documentationUrl="/doc/url"
+      id="searchBar"
+      onBookmarkClick={[Function]}
+      searchQuery=""
+      url="/api/bookmarks"
+    />
+  </div>
+</div>
+`;
